@@ -30,7 +30,7 @@ The intent is to allow for code to be executed based on paramaters from a POST v
 
 Sections that are important to modify
 
-```Line 82: if($count_of_infected_files > 20000)``` Edit this line to allow for larger recursion. Exits early, so as to not generate a super large page (for dry-run purposes). 2000 would likely be a full server. Limit to 100 or so for testing.
+```Line 82: if($count_of_infected_files > 20000)``` Edit this line to allow for larger recursion. Exits early, so as to not generate a super large page (for dry-run purposes). 20000 would likely be a full server. Limit to 100 or so for testing.
 
 ```Line 160:file_put_contents($this_file, $other_content);``` Do you really want to replace? Comment out until you are ready! This first one is for javascript files that appear to be completely replaced. Since the scanner removes this, the finished file is really small. It will replace the file with a console.log so you can remember to rebuild that individual file from the original source if necessary.
 ```Line 162: file_put_contents($this_file, $normal_other_content);``` Do you really want to replace? Comment out until you are ready! This is the master replace. Works on all larger files.
